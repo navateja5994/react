@@ -43,3 +43,28 @@
     0 0 30px rgba(255, 204, 0, 0.7) inset;
   filter: contrast(1.4) brightness(1);
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 6px;
+  }
+
+  .gallery-image {
+    width: 120px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+    gap: 10px 4px;
+  }
+
+  .gallery-image {
+    width: 100px;
+    height: 130px;
+  }
+}
